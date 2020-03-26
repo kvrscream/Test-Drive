@@ -5,8 +5,16 @@
     x:Class="testDrive.Views.DetalheView"
     >
     <ContentPage.Content>
-        <StackLayout>
-    
+        <StackLayout Padding="25">
+
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Acessórios">
+                        <SwitchCell Text="Freio ABS - R$ 800" On="True"></SwitchCell>
+                        <SwitchCell Text="Freio ABS - R$ 800"></SwitchCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
             <Label Text="Oi" VerticalOptions="CenterAndExpand"></Label>
 
             <Button x:Name="btnProximo"
