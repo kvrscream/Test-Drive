@@ -1,0 +1,16 @@
+/Users/macbookair/Projects/testDrive/testDrive/bin/Debug/netstandard2.0/testDrive.deps.json
+/Users/macbookair/Projects/testDrive/testDrive/bin/Debug/netstandard2.0/testDrive.dll
+/Users/macbookair/Projects/testDrive/testDrive/bin/Debug/netstandard2.0/ref/testDrive.dll
+/Users/macbookair/Projects/testDrive/testDrive/bin/Debug/netstandard2.0/testDrive.pdb
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/testDrive.csprojAssemblyReference.cache
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/testDrive.csproj.CoreCompileInputs.cache
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/testDrive.AssemblyInfoInputs.cache
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/testDrive.AssemblyInfo.cs
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/testDrive.dll
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/ref/testDrive.dll
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/testDrive.pdb
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/Views/DetalheView.xaml.g.cs
+/Users/macbookair/Projects/testDrive/testDrive/obj/Debug/netstandard2.0/Views/AgendamentoView.xaml.g.cs
