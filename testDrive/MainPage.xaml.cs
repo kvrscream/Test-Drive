@@ -21,16 +21,23 @@ namespace testDrive
             InitializeComponent();
         }
 
-        void listViewVieiculos_ItemTapped(System.Object sender, Xamarin.Forms.ItemTappedEventArgs e)
-        {
-            Veiculo veiculo = new Veiculo();
-            veiculo = (Veiculo)e.Item;
-            //Criando alerta
-            //this.DisplayAlert("Clicou em", veiculo.Veiculo, "Ok");
 
-            //Navegar para outra página easy
-            Navigation.PushAsync(new DetalheView(veiculo: veiculo), true);
-            
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            MessagingCenter.Subscribe<Veiculo>(this, "veiculoSelecionado",
+                (msg) =>
+                {
+                    Navigation.PushAsync(new DetalheView(msg));
+                }
+            );
         }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            MessagingCenter.Unsubscribe<Veiculo>(this, "veiculoSelecionado");
+        }
+
     }
 }
