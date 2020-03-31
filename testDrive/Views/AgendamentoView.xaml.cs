@@ -1,46 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using testDrive.Models;
+using testDrive.ViewModels;
 using Xamarin.Forms;
 
 namespace testDrive.Views
 {
     public partial class AgendamentoView : ContentPage
     {
+        public AgendamentoViewModel AgendamentoViewModel { get; set; }
 
-        public string Nome { get; set; }
-        public string Fone { get; set; }
-        public string Email { get; set; }
-
-        DateTime dataAgendamento = DateTime.Today;
-        public DateTime DataAgendamento
-        {
-            get
-            {
-                return dataAgendamento;
-            }
-            set
-            {
-                dataAgendamento = value;
-            }
-        }
-        public TimeSpan HoraAgendamento { get; set; }
-
-        public AgendamentoView(Veiculos veiculo)
+        public AgendamentoView(Veiculo veiculo)
         {
             InitializeComponent();
-
-            this.Title = veiculo.Veiculo;
-            this.BindingContext = this;
+            this.Title = veiculo.Nome;
+            this.AgendamentoViewModel = new AgendamentoViewModel(veiculo: veiculo);
+            this.BindingContext = this.AgendamentoViewModel;
         }
 
         void Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            DisplayAlert("Dados Preenchidos", @"Nome: " + Nome + "\n" +
-                "Telefone: " + Fone + "\n" +
-                "E-mail: "+ Email + "\n"+
-                "Data Agendamento:"+ DataAgendamento + "\n" +
-                "Hora Agendamento: " + HoraAgendamento
+            DisplayAlert("Dados Preenchidos", @"Nome: " + AgendamentoViewModel.Agendamento.Nome + "\n" +
+                "Telefone: " + AgendamentoViewModel.Agendamento.Fone + "\n" +
+                "E-mail: "+ AgendamentoViewModel.Agendamento.Email + "\n"+
+                "Data Agendamento:"+ AgendamentoViewModel.Agendamento.DataAgendamento + "\n" +
+                "Hora Agendamento: " + AgendamentoViewModel.Agendamento.HoraAgendamento
 
 
                 , "Ok");

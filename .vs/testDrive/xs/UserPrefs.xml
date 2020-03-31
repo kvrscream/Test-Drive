@@ -2,21 +2,25 @@
   <MonoDevelop.Ide.ItemProperties.testDrive.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.326E7438-2A07-4327-B335-DC60CA75B589" />
   <MonoDevelop.Ide.Workbench ActiveDocument="testDrive/Views/AgendamentoView.xaml.cs">
     <Files>
-      <File FileName="testDrive/Views/AgendamentoView.xaml" Line="26" Column="75" />
-      <File FileName="testDrive/Views/AgendamentoView.xaml.cs" Line="15" Column="50" />
+      <File FileName="testDrive/ViewModels/AgendamentoViewModel.cs" Line="72" Column="50" />
+      <File FileName="testDrive/Views/AgendamentoView.xaml.cs" Line="17" Column="59" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="testDrive" expanded="True">
             <Node name="testDrive" expanded="True">
-              <Node name="Models" expanded="True" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="AgendamentoView.xaml" expanded="True" />
-                <Node name="DetalheView.xaml" expanded="True" />
+                <Node name="AgendamentoView.xaml" expanded="True">
+                  <Node name="AgendamentoView.xaml.cs" selected="True" />
+                </Node>
               </Node>
               <Node name="App.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
+            <Node name="testDrive.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>

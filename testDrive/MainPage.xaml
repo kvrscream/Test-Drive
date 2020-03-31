@@ -2,17 +2,22 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:testDrive.ViewModels"
              mc:Ignorable="d"
              x:Class="testDrive.MainPage"
              Title="Test Drive"
              >
-    <ListView x:Name="listViewVieiculos" Margin="25" ItemTapped="listViewVieiculos_ItemTapped">
+
+    <ContentPage.BindingContext>
+        <vm:ListagemViewModel></vm:ListagemViewModel>
+    </ContentPage.BindingContext>
+    <ListView x:Name="listViewVieiculos" Margin="25" ItemTapped="listViewVieiculos_ItemTapped" ItemsSource="{Binding Veiculos}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
                     <ViewCell.View>
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="{Binding Veiculo}" FontSize="20" VerticalTextAlignment="Center" ></Label>
+                            <Label Text="{Binding Nome}" FontSize="20" VerticalTextAlignment="Center" ></Label>
                             <Label Text=" - " FontSize="20" VerticalTextAlignment="Center"></Label>
                             <Label Text="{Binding PrecoFormatado}" FontAttributes="Bold" VerticalTextAlignment="Center"></Label>
                         </StackLayout>
