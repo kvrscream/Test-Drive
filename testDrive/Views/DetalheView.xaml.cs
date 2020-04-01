@@ -19,13 +19,21 @@ namespace testDrive.Views
             this.BindingContext = new DetalheViewModel(veiculo: veiculo);
         }
 
-        void btnProximo_Clicked(System.Object sender, System.EventArgs e)
+        protected override void OnAppearing()
         {
-            Veiculo veiculoParam = Veiculo;
+            base.OnAppearing();
 
-            Navigation.PushAsync(new AgendamentoView(veiculoParam));
+            MessagingCenter.Subscribe<Veiculo>(this, "proximo", (msg) =>
+            {
+                Navigation.PushAsync(new AgendamentoView(this.Veiculo));
+            });
         }
 
-        
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            MessagingCenter.Unsubscribe<Veiculo>(this, "proximo");
+        }
+
     }
 }

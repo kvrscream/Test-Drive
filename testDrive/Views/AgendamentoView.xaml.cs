@@ -18,16 +18,28 @@ namespace testDrive.Views
             this.BindingContext = this.AgendamentoViewModel;
         }
 
-        void Button_Clicked(System.Object sender, System.EventArgs e)
+        protected override void OnAppearing()
         {
-            DisplayAlert("Dados Preenchidos", @"Nome: " + AgendamentoViewModel.Agendamento.Nome + "\n" +
-                "Telefone: " + AgendamentoViewModel.Agendamento.Fone + "\n" +
-                "E-mail: "+ AgendamentoViewModel.Agendamento.Email + "\n"+
-                "Data Agendamento:"+ AgendamentoViewModel.Agendamento.DataAgendamento + "\n" +
-                "Hora Agendamento: " + AgendamentoViewModel.Agendamento.HoraAgendamento
+            base.OnAppearing();
+
+            MessagingCenter.Subscribe<Agendamento>(this, "agendamento", (msg) =>
+            {
+                DisplayAlert("Dados Preenchidos", @"Nome: " + AgendamentoViewModel.Agendamento.Nome + "\n" +
+               "Telefone: " + AgendamentoViewModel.Agendamento.Fone + "\n" +
+               "E-mail: " + AgendamentoViewModel.Agendamento.Email + "\n" +
+               "Data Agendamento:" + AgendamentoViewModel.Agendamento.DataAgendamento + "\n" +
+               "Hora Agendamento: " + AgendamentoViewModel.Agendamento.HoraAgendamento
 
 
-                , "Ok");
+               , "Ok");
+            });
         }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            MessagingCenter.Unsubscribe<Agendamento>(this, "agendamento");
+        }
+
     }
 }
