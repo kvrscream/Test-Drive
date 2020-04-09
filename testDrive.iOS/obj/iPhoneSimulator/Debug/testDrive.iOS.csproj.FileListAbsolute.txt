@@ -45,15 +45,17 @@
 /Users/macbookair/Projects/testDrive/testDrive.iOS/bin/iPhoneSimulator/Debug/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
 /Users/macbookair/Projects/testDrive/testDrive.iOS/bin/iPhoneSimulator/Debug/testDrive.dll
 /Users/macbookair/Projects/testDrive/testDrive.iOS/bin/iPhoneSimulator/Debug/testDrive.pdb
-/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/ibtool/_BundleResourceWithLogicalName.items
-/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/actool/_PartialAppManifest.items
-/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/actool/_BundleResourceWithLogicalName.items
-/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/coremlc/_PartialAppManifest.items
-/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/coremlc/_BundleResourceWithLogicalName.items
-/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.3/optimized/
 /Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/testDrive.iOS.csprojAssemblyReference.cache
 /Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/testDrive.iOS.csproj.CoreCompileInputs.cache
 /Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/XamlC.stamp
 /Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/testDrive.iOS.csproj.CopyComplete
 /Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/testDrive.iOS.exe
 /Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/testDrive.iOS.pdb
+/Users/macbookair/Projects/testDrive/testDrive.iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/macbookair/Projects/testDrive/testDrive.iOS/bin/iPhoneSimulator/Debug/System.Net.Http.dll
+/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/ibtool/_BundleResourceWithLogicalName.items
+/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/_PartialAppManifest.items
+/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/actool/_BundleResourceWithLogicalName.items
+/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_PartialAppManifest.items
+/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/coremlc/_BundleResourceWithLogicalName.items
+/Users/macbookair/Projects/testDrive/testDrive.iOS/obj/iPhoneSimulator/Debug/device-builds/iphone 11-13.4/optimized/

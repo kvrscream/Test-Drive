@@ -7,7 +7,7 @@ using Xamarin.Forms;
 
 namespace testDrive.ViewModels
 {
-    public class DetalheViewModel : INotifyPropertyChanged
+    public class DetalheViewModel : BaseViewModel
     {
 
         public DetalheViewModel(Veiculo veiculo)
@@ -99,15 +99,7 @@ namespace testDrive.ViewModels
             }
         }
 
-        /*Aqui como usamos a interfafe INottifiedPropertyChanged
-         * É necessário implemnetar a interface e usar a OnPropertyChanged
-         * Sem isso é impossível notificar alterações da view para o CS
-         */
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void OnPropertyChanged([CallerMemberName]string name = "")
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
+        
 
 
         public ICommand ProximoCommand { get; set; }

@@ -22,24 +22,42 @@ namespace testDrive.Views
         {
             base.OnAppearing();
 
-            MessagingCenter.Subscribe<Agendamento>(this, "agendamento", (msg) =>
+            MessagingCenter.Subscribe<Agendamento>(this, "agendamento", async (msg) =>
             {
-                DisplayAlert("Dados Preenchidos", @"Nome: " + AgendamentoViewModel.Agendamento.Nome + "\n" +
-               "Telefone: " + AgendamentoViewModel.Agendamento.Fone + "\n" +
-               "E-mail: " + AgendamentoViewModel.Agendamento.Email + "\n" +
-               "Data Agendamento:" + AgendamentoViewModel.Agendamento.DataAgendamento + "\n" +
-               "Hora Agendamento: " + AgendamentoViewModel.Agendamento.HoraAgendamento
+
+                bool confirma = await DisplayAlert("Salvar Agendamento",
+                    "Deseja mesmo salvar este agendamento?",
+                    "Sim", "Não");
+
+                if (confirma)
+                {
+                    this.AgendamentoViewModel.SalvaAgendamento();
+                }
+
+            });
+
+            MessagingCenter.Subscribe<Agendamento>(this, "sucessoAgendamento", (msg) =>
+            {
+                DisplayAlert("Agendamento", "Agendamento salvo com sucesso!", "Ok");
+            });
 
 
-               , "Ok");
+            MessagingCenter.Subscribe<ArgumentException>(this, "erroAgendamento", (msg) =>
+            {
+                DisplayAlert("Agendamento", "Falha ao agendar o test-drive! Tente novamente mais tarde.", "Ok");
             });
         }
+
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
             MessagingCenter.Unsubscribe<Agendamento>(this, "agendamento");
+            MessagingCenter.Unsubscribe<Agendamento>(this, "sucessoAgendamento");
+            MessagingCenter.Unsubscribe<ArgumentException>(this, "erroAgendamento");
         }
+
+        
 
     }
 }
