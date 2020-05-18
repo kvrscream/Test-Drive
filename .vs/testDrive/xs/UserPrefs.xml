@@ -3,7 +3,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="testDrive/MainPage.xaml">
     <Files>
       <File FileName="testDrive/MainPage.xaml.cs" Line="20" Column="28" />
-      <File FileName="testDrive/ViewModels/ListagemViewModel.cs" Line="14" Column="18" />
+      <File FileName="testDrive/ViewModels/ListagemViewModel.cs" />
       <File FileName="testDrive/MainPage.xaml" Line="16" Column="30" />
     </Files>
     <Pads>
